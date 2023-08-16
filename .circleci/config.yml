@@ -1,7 +1,9 @@
+version: 2.1
+
 executors:
   my-executor:
     docker:
-      - image: cimage/base:stable
+      - image: cimg/base:stable
     circleci_ip_ranges: true
 
 jobs:
