@@ -1,0 +1,12 @@
+executors:
+  my-executor:
+    docker:
+      - image: cimage/base:stable
+    circleci_ip_ranges: true
+
+jobs:
+  build:
+    executor: my-executor
+    steps:
+      - checkout
+      - run: echo "hello"
